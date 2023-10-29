@@ -1,0 +1,248 @@
+:root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --main-color-cc202a: #cc202a;
+    --sec-color-cc202a: #B93B42;
+    --section-bcolor-cc202a: #F2F2F2;
+    --yellow-color: #EFA943;
+    --px-18-size: 1.125rem;
+    --px-20-size: 1.25rem;
+    --px-25-size: 1.5625rem;
+}
+@font-face {
+    font-family: "vip-rawy-regular";
+    src: url(../fonts/VIPRawyRegular.otf);
+    color: var(--color-FFAE00);
+}
+@font-face {
+    font-family: "vip-rawy-bold";
+    src: url(../fonts/VIPRawyBoldBold.otf);
+    font-weight: bold;
+}
+body {
+    font-family: "vip-rawy-regular";
+    font-size: 1rem;
+    height: 2000px;
+}
+.sec-ttl h1 {
+    font-family: "vip-rawy-bold";
+    color: #555;
+}
+.sec-ttl h1::after {
+    content: "";
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    width: 10rem;
+    height: 3px;
+    background-color: var(--sec-color-cc202a);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.color-black {color: var(--black-color);}
+.color-white {color: var(--white-color);}
+.num {font-family: 'Times New Roman', Times, serif;}
+.basic-icon .icon {
+    display: inline-block;
+    width: 2px;
+}
+.icon-solid {background-color: #2B6046;}
+.icon-gray {background-color: #ccc;}
+.icon-1 {height: 6px;}
+.icon-2 {height: 8px;}
+.icon-3 {height: 10px;}
+.icon-4 {height: 14px;}
+.icon-5 {height: 16px;}
+.popup-content .modal-content .modal-title {
+    font-family: "vip-rawy-bold";
+    color: var(--sec-color-cc202a);
+}
+.popup-content .modal-content .modal-body .det-txt {color: var(--main-color-cc202a);}
+.popup-content .modal-content .modal-body .able-to {color: #4aaa6d;}
+.popup-content .course-content .able-to-ul li::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 1rem;
+    color: #25d366;
+    font-size: 1.5rem;
+}
+.popup-content .modal-content .modal-body .c-content {color: #dd930a;}
+.popup-content .modal-content .modal-body .c-content-ul li::before {
+    content: "\f14a";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 1rem;
+    color: #dd930a;
+    font-size: 1.5rem;
+}
+.social a {color: var(--black-color);}
+.social .facebook {color: #1877f2;}
+.social .phone {color: #25d366;}
+.social .email {color: #8C26B1;}
+.social .fax {color: #EFA41C;}
+.social .location {color: #E74335;}
+.social .icon:hover {opacity: 0.7;}
+.carousel .carousel-control-btn .icon {background-color: rgba(0, 0, 0, 0.7);}
+.trans-05 {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+/* ------To Top Icon------- */
+.to-top {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    bottom: 1rem;
+    right: -5rem;
+    background-color: transparent;
+    border: 2px solid var(--yellow-color);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer;
+}
+.to-top .angles-up {color: #E19413;}
+.to-top:hover .angles-up {
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+}
+.to-top.show {right: 1rem;}
+/* ----------index.html Page---------- */
+.navbar .navbar-brand img {width: 10%;}
+@media (max-width: 575.98px) {
+    .navbar .navbar-toggler {margin-top: 1rem;}
+}
+@media (min-width: 1200px) {
+    .navbar .navbar-nav .nav-link {
+        font-size: var(--px-20-size);
+        font-family: "vip-rawy-bold";
+    }
+}
+@media (min-width: 992px) {
+    .navbar .nav-item.grow-twice {width: 150px;}
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {color: var(--main-color-cc202a);}
+.slider .carousel .carousel-indicators button {background-color: var(--black-color);}
+.slider .carousel .carousel-item img {
+    height: 600px;
+    width: 100%;
+}
+.slider .carousel .carousel-item .carousel-caption {color: var(--black-color);}
+.department {background-color: var(--section-bcolor-cc202a);}
+.department .box {
+    background-color: var(--white-color);
+    /* height: 13rem; */
+}
+.department .box .image {
+    background-color: var(--sec-color-cc202a);
+    width: 6rem;
+    height: 6rem;
+    top: -3rem;
+}
+.department .box h3 {
+    font-family: "vip-rawy-bold";
+    color: #565B78;
+}
+.department .box button a {
+    color: var(--white-color);
+    font-size: 1.25rem;
+}
+.courses .card {overflow: hidden;}
+.courses .card:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.courses .card .card-body .clock {color: var(--yellow-color);}
+.courses .card .card-body .duration {color: var(--sec-color-cc202a);}
+.courses .popup-content .modal-content a.download-pdf,
+.courses .popup-content .modal-content a.download-pdf:visited {
+    color: var(--white-color);
+}
+.certifications .cert-content {
+    background-color: #E6E7E9;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.certifications .cert-content .course-id {width: 50%;}
+.certifications .cert-content .info p {
+    font-size: 1.25rem;
+    color: #E65005;
+}
+.social-media .clients-carousel {
+    width: 60%;
+    max-height: 350px;
+    margin: auto;
+    /* overflow: hidden; */
+}
+.social-media .clients-carousel .carousel-item {height: 350px;}
+@media (max-width: 575.98px) {
+    .social-media .clients-carousel {width: 100%;}
+}
+@media (max-width: 767.98px) {
+    .social-media .clients-carousel {width: 90%;}
+}
+@media (max-width: 991.98px) {
+    .social-media .clients-carousel {width: 80%;}
+}
+.survey .content .envelope {
+    color: #264CA4;
+}
+.survey .content h4 {
+    font-size: 1.5rem;
+    font-family: "vip-rawy-bold";
+    color: #E65005;
+}
+.survey .content p {
+    font-size: 2rem;
+}
+.survey .send-msg .click-here {
+    font-size: 1.25rem;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.survey .send-msg .modal .modal-dialog .modal-body {
+    font-family: "vip-rawy-bold";
+    font-size: 1.25rem;
+}
+footer {
+    background-color: #1F1F1F;
+    color: var(--white-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer .box .phone {color: #25d366;}
+footer .box .email {color: #8C26B1;}
+footer .box .house {color: #E74335;}
+.copy-rights {
+    background-color: #1F1F1F;
+    color: var(--white-color);
+}
+.copy-rights .createdby {
+    color: #E74335;
+    font-family: "vip-rawy-bold";
+    letter-spacing: 1px;
+}
